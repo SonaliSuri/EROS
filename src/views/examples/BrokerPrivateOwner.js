@@ -54,7 +54,7 @@ createValidator = e => {
                 }
                 var myHeaders = new Headers();
                 myHeaders.append("Content-Type", "application/json");
-                var raw = JSON.stringify({"username":"broker@gmail.com","signature":email});
+                var raw = JSON.stringify({"username":"discovery.yachts.seattle@gmail.com","signature":email});
 
                         console.log(raw);
                         var requestOptions = {
@@ -349,11 +349,11 @@ createValidator = e => {
                           </FormGroup>
                         </Form>
         
-                      <Button className="btn-round" size="lg" style={{background:"#5393ff", float:"left"}} onClick={() => {
+                      <Button  size="lg" style={{background:"#3f51b5", float:"left"}} onClick={() => {
                       var myHeaders = new Headers();
                 myHeaders.append("Content-Type", "application/json");
                 console.log(this.props);
-                        var raw = JSON.stringify({"username":"broker@gmail.com" ,"radio_call":"" ,"ship_type":document.getElementById("demo-simple-select").innerText,"port":document.getElementById("port-simple-select").innerText,"ship_lenght":document.getElementById("length").value,"width":document.getElementById("breadth").value,"builder":document.getElementById("builder").value,"countrybuild":document.getElementById("countrybuild").value,"yearbuild":document.getElementById("yearbuild").value,"breadth":document.getElementById("breadth").value,"grosstonnage":"","model":document.getElementById("model").value,"power":document.getElementById("power").value,"signature":document.getElementById("proposedshipname").value,"registration_date":document.getElementById("date").value,"is_accurate":true});
+                        var raw = JSON.stringify({"username":"discovery.yachts.seattle@gmail.com" ,"radio_call":"" ,"ship_type":document.getElementById("demo-simple-select").innerText,"port":document.getElementById("port-simple-select").innerText,"ship_lenght":document.getElementById("length").value,"width":document.getElementById("breadth").value,"builder":document.getElementById("builder").value,"countrybuild":document.getElementById("countrybuild").value,"yearbuild":document.getElementById("yearbuild").value,"breadth":document.getElementById("breadth").value,"grosstonnage":"","model":document.getElementById("model").value,"power":document.getElementById("power").value,"signature":document.getElementById("proposedshipname").value,"registration_date":document.getElementById("date").value,"is_accurate":true});
                         console.log(raw);
                         var requestOptions = {
                           method: 'POST',
@@ -372,7 +372,7 @@ createValidator = e => {
                        
                           Register 
                         </Button>
-                        <Button className="btn-round" size="lg"  style={{background:"#ff4569", float:"right"}} tag={Link} to={{pathname:'/dashboard' ,
+                        <Button size="lg"  style={{background:"#ff4569", float:"right"}} tag={Link} to={{pathname:'/dashboard' ,
                     state: {
                       fromNotifications: this.props.values.email
                     }}}

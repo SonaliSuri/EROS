@@ -56,7 +56,7 @@ class DashboardTabs extends React.Component {
                   
                   tag={Link} 
                   to={{
-                    pathname:this.props.values.detail=="broker@gmail.com"? "/broker-page":"/private-owner",
+                    pathname:this.props.values.detail=="discovery.yachts.seattle@gmail.com"? "/broker-page":"/private-owner",
                     state: {
                       fromNotifications: this.props.values.detail?this.props.values.detail:this.props.values
                     }}}

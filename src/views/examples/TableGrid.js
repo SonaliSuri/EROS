@@ -52,7 +52,7 @@ class ValueGetterGrid extends React.Component {
             };
             console.log(raw);
             const proxyurl = "https://cors-anywhere.herokuapp.com/";
-            fetch("/get_grid_data", requestOptions)
+            fetch(proxyurl+"https://ferrous-portal-295000.wl.r.appspot.com/get_grid_data", requestOptions)
               .then(response => response.json())
               .then(result => {
                 this.setState({ data: result })

@@ -304,13 +304,25 @@ createValidator = e => {
                                 id="countrybuild"
                               />
                             </InputGroup>
+                            <InputGroup
+                          
+                          >
+        
+                           
+                           
+                      
+                      <Label style={{color:"gray", marginBottom:"-3%"}}>Registration Date</Label>
+                  
+                             
+                          
+                      </InputGroup>
                           <InputGroup
                           
                           >
                          
                             <TextField
                             style={{color: '#000000'}}
-                              label="Date"
+                        
                               type="date"
                               required={true}
                               

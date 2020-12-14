@@ -19,7 +19,7 @@ const Success = () => {
     method: 'POST'
 
   };
-  fetch("https://ferrous-portal-295000.wl.r.appspot.com/send_email",requestOptions)
+  fetch("/send_email",requestOptions)
 
   .catch(error => console.log('error', error));
 

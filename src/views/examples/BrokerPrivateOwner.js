@@ -64,7 +64,7 @@ createValidator = e => {
                           redirect: 'follow'
                         };
                         const proxyurl = "https://cors-anywhere.herokuapp.com/";
-                        fetch("https://ferrous-portal-295000.wl.r.appspot.com/private_owner_details", requestOptions)
+                        fetch("/private_owner_details", requestOptions)
                         .then(response => response.json() )
                         .then(result => {if (result[0].results==null || result[0].results==undefined) {document.getElementById("error").innerHTML="Shipname not available";document.getElementById("success").innerHTML=""}  else {
                             document.getElementById("success").innerHTML="Ship name available for ports "+result[0].results;
@@ -75,7 +75,7 @@ createValidator = e => {
 }
   render() {
     const today = new Date();
-    var todays= today.getFullYear()+"-"+(today.getMonth()+1)+"-0"+today.getDate();
+    var todays= today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate();
 
     return (
          <React.Fragment>
@@ -350,7 +350,7 @@ createValidator = e => {
                           redirect: 'follow'
                         };
                         const proxyurl = "https://cors-anywhere.herokuapp.com/";
-                        fetch("https://ferrous-portal-295000.wl.r.appspot.com/private_single", requestOptions)
+                        fetch("/private_single", requestOptions)
                           
                           .catch(error => console.log('error', error));
                          

@@ -43,7 +43,7 @@ class DynamicTable extends React.Component {
                         };
                         console.log(raw);
                         const proxyurl = "https://cors-anywhere.herokuapp.com/";
-                        fetch("https://ferrous-portal-295000.wl.r.appspot.com/add_private_owners", requestOptions)
+                        fetch("/add_private_owners", requestOptions)
                           .then(response => response.text())
                           .then(result => console.log(result))
                           .catch(error => console.log('error', error));
@@ -73,7 +73,7 @@ class DynamicTable extends React.Component {
             };
             console.log(raw);
             const proxyurl = "https://cors-anywhere.herokuapp.com/";
-            fetch("https://ferrous-portal-295000.wl.r.appspot.com/delete_private_owners", requestOptions)
+            fetch("/delete_private_owners", requestOptions)
               .then(response => response.text())
               .then(result => console.log(result))
               .catch(error => console.log('error', error));

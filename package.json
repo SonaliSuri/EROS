@@ -31,6 +31,7 @@
     "url": ""
   },
   "homepage": "",
+  "proxy": "https://ferrous-portal-295000.wl.r.appspot.com/",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/data-grid": "^4.0.0-alpha.10",

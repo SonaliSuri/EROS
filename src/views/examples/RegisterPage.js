@@ -173,7 +173,7 @@ class RegisterPage extends React.Component {
                         };
                         console.log(raw);
                         const proxyurl = "https://cors-anywhere.herokuapp.com/";
-                        fetch("https://ferrous-portal-295000.wl.r.appspot.com/details", requestOptions)
+                        fetch("/details", requestOptions)
                           .then(response => response.json())
                           .then(result => {if (result[0]==null || result[0]==undefined) {document.getElementById("success").innerHTML="";document.getElementById("error").innerHTML="Incorrect Email or Password"} 
                           else {

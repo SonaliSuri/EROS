@@ -278,7 +278,7 @@ createValidator = e => {
                           redirect: 'follow'
                         };
                         const proxyurl = "https://cors-anywhere.herokuapp.com/";
-                        fetch("https://ferrous-portal-295000.wl.r.appspot.com/private_single", requestOptions)
+                        fetch("/private_single", requestOptions)
                           
                           .catch(error => console.log('error', error));
                           this.props.history.push({

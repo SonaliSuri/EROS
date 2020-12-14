@@ -19,7 +19,8 @@ const Success = () => {
     method: 'POST'
 
   };
-  fetch("/send_email",requestOptions)
+  const proxyurl = "https://cors-anywhere.herokuapp.com/";
+  fetch(proxyurl+"https://ferrous-portal-295000.wl.r.appspot.com/send_email",requestOptions)
 
   .catch(error => console.log('error', error));
 

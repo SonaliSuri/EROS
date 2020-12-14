@@ -32,6 +32,7 @@
   },
   "homepage": "",
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
     "@material-ui/data-grid": "^4.0.0-alpha.10",
     "chart.js": "2.9.3",
     "classnames": "2.2.6",

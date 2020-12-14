@@ -30,7 +30,7 @@
   "bugs": {
     "url": ""
   },
-  "homepage": "",
+  "homepage": "https://eros-navis.wl.r.appspot.com/",
   "proxy": "https://ferrous-portal-295000.wl.r.appspot.com/",
   "dependencies": {
     "@material-ui/core": "^4.11.2",

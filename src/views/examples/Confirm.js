@@ -161,7 +161,7 @@ const Confirm = ({ handleNext, handleBack, values }) => {
                         };
                         console.log(raw);
                         const proxyurl = "https://cors-anywhere.herokuapp.com/";
-                        fetch(proxyurl+"https://ferrous-portal-295000.wl.r.appspot.com/signup", requestOptions)
+                        fetch("https://ferrous-portal-295000.wl.r.appspot.com/signup", requestOptions)
                           .then(response => response.text())
                           .then(result => console.log(result))
                           .catch(error => console.log('error', error));

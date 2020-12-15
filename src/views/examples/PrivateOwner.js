@@ -93,7 +93,7 @@ createValidator = e => {
                           redirect: 'follow'
                         };
                         const proxyurl = "https://cors-anywhere.herokuapp.com/";
-                        fetch(proxyurl+"https://ferrous-portal-295000.wl.r.appspot.com/private_owner_details", requestOptions)
+                        fetch("https://ferrous-portal-295000.wl.r.appspot.com/private_owner_details", requestOptions)
                         .then(response => response.json() )
                         .then(result => {if (result[0]==null || result[0]==undefined) {document.getElementById("error").innerHTML="";document.getElementById("success").innerHTML="Shipname Available"}  else {
                             document.getElementById("success").innerHTML="";
@@ -278,7 +278,7 @@ createValidator = e => {
                           redirect: 'follow'
                         };
                         const proxyurl = "https://cors-anywhere.herokuapp.com/";
-                        fetch(proxyurl+"https://ferrous-portal-295000.wl.r.appspot.com/private_single", requestOptions)
+                        fetch("https://ferrous-portal-295000.wl.r.appspot.com/private_single", requestOptions)
                           
                           .catch(error => console.log('error', error));
                           this.props.history.push({
